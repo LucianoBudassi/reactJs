@@ -3,11 +3,11 @@ import Navbar from './Navbar/Navbar';
 
 
 
-function App() {
+const App = () => {
     return (
+       <>
        <Navbar/>
-        
-
+       </>
        
     )
 }
