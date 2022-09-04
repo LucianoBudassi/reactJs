@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 import "./productosLista"
 
 const ItemList = () => {
@@ -15,3 +15,4 @@ const ItemList = () => {
 }
 
 export default ItemList;
+ */
