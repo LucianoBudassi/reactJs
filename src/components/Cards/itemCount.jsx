@@ -32,7 +32,7 @@ const ItemCount = ({stock, onAdd}) => {
                 <button className='btn btn-secunday' onClick={substract}>-</button>
         </div>
         <div>
-                <button className='btn' onClick={() => onAdd(count)}>Confirmar</button>
+                <button className='btn-confirm' onClick={() => onAdd(count)}>Confirmar</button>
         </div>
         </>
     );
