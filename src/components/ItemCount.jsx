@@ -1,5 +1,4 @@
-import React from 'react';
-import './itemCount.css';
+/* import React from 'react';
 import { useState } from 'react';
 const ItemCount = ({stock, onAdd}) => {
     const [count, setCount] = useState(0)
@@ -37,5 +36,41 @@ const ItemCount = ({stock, onAdd}) => {
         </>
     );
 }
+
+export default ItemCount;
+*/
+
+import { React, useState } from "react";
+import Button from 'react-bootstrap/Button';
+
+const ItemCount = ({ stock, onAdd }) => {
+  const [cont, setCont] = useState(0);
+
+  function substract() {
+    if (cont < stock) {
+      setCont(cont + 1);
+    }
+  }
+
+  function add() {
+    if (cont > 0) {
+      setCont(cont - 1);
+    } else {
+      setCont(0);
+    }
+  }
+
+  return (
+    <div>
+      <div>
+        <Button onClick={substract}>-</Button> {cont}
+        <Button onClick={add}>+</Button>
+      </div>
+      <div>
+        <Button onClick={() => onAdd(cont)}>Agregar al carrito</Button>
+      </div>
+    </div>
+  );
+};
 
 export default ItemCount;

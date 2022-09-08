@@ -1,38 +1,44 @@
 [
     {
-      "precio": 500,
+      "precio": 1200,
       "id": 1,
-      "title": "Fernet Branca",
-      "thumbnailUrl": "./public/image/branca.jpg"
+      "title": "Las Perdices Malbec",
+      "stock": 10,
+      "img": "./public/image/alamos-malbec.jpg"
     },
     {
-      "precio": 300,
+      "precio": 4100,
       "id": 2,
-      "title": "Absolut",
-      "thumbnailUrl": "./public/image/absolut.jpg"
+      "title": "Rutini Cabernet",
+      "stock": 20,
+      "img": "./public/image/alamos-malbec.jpg"
     },
     {
-      "precio": 100,
+      "precio": 890,
       "id": 3,
-      "title": "Alamos-Malbec",
-      "thumbnailUrl": "./public/image/almaos-malbec.jpg"
+      "title": "Altos del Plata Cabernet",
+      "stock": 12,
+      "img": "./public/image/alamos-malbec.jpg"
     },
     {
-      "precio": 50,
+      "precio": 1250,
       "id": 4,
-      "title": "Campari",
-      "thumbnailUrl": "./public/image/Campari.jpg"
+      "title": "Punto Final Malbec",
+      "stock": 13,
+      "img": "./public/image/alamos-malbec.jpg"
     },
     {
-      "precio": 10,
+      "precio": 2000,
       "id": 5,
-      "title": "Heiniken",
-      "thumbnailUrl": "./public/image/Heiniken.jpg"
+      "title": "Casa Boher Cabernet",
+      "stock": 20,
+      "img": "./public/image/alamos-malbec.jpg"
     },
     {
       "precio": 150,
       "id": 6,
-      "title": "Heredos Gin",
-      "thumbnailUrl": "./public/image/herederos.jpg"
+      "title": "Terraza Reserva Cabernet",
+      "stock": 25,
+      "img": "./public/image/alamos-malbec.jpg"
     }
   ]
