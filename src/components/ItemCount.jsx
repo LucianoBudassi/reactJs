@@ -63,8 +63,8 @@ const ItemCount = ({ stock, onAdd }) => {
   return (
     <div>
       <div>
-        <Button onClick={substract}>-</Button> {cont}
-        <Button onClick={add}>+</Button>
+        <Button onClick={add}>-</Button> {cont}
+        <Button onClick={substract}>+</Button>
       </div>
       <div>
         <Button onClick={() => onAdd(cont)}>Agregar al carrito</Button>

@@ -1,30 +1,30 @@
 import { React, useState, useEffect } from "react";
-import ItemDetail from "./ItemDetail";
-import productos from "./Productos.js";
-import {useParams} from 'react-router-dom'
+import ItemList from "./ItemList";
+import productos from "./Productos";
+import { useParams } from "react-router-dom";
 
-const ItemDetailContainer = () => {
-  const [data2, setData] = useState([]);
-
-  const {id} = useParams();
-
+const ItemListContainer = () => {
+  const [data, setData] = useState([]);
+  const {categoria} = useParams();
   useEffect(() => {
     const getData = new Promise((res) => {
-      res(productos);
+      if (categoria){
+        res(productos.filter(producto => producto.categoria === categoria));
+      }
+      else {
+        res(productos);
+      }
+     
     });
- 
-     getData
-       .then((res) => setData(res.find((product) => product.id === Number(id))))
-       .catch((err) => console.error(`Ocurrio el siguiente error: ${err}`));
-   }, []);
-
-      
-
+    getData
+      .then((res) => setData(res))
+      .catch((error) => console.error("ocurrio algo inesperado"));
+  }, [categoria]);
   return (
     <div className="container">
-      <ItemDetail data2={data2}></ItemDetail>
+      <ItemList data={data}></ItemList>
     </div>
   );
 };
 
-export default ItemDetailContainer;
+export default ItemListContainer;
