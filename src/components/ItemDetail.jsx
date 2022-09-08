@@ -6,7 +6,7 @@ const ItemDetail = ({ data2 }) => {
   return (
     <div>
       <Card style={{ width: "18rem" }}>
-        <Card.Img variant="top" src={`../${data2.image}`}/>
+        <Card.Img variant="top" src={`./${data2.image}`}/>
         <Card.Body>
           <Card.Title>{data2.nombre}</Card.Title>
           <Card.Text>{data2.descripcion}</Card.Text>

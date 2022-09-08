@@ -1,33 +1,21 @@
-import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
 import CarWidgets from './CarWidgets';
+import {Link} from 'react-router-dom';
+import '../App.css';
 
 
-
-const Navbar = () => {
+function NavBar() {
     return (
-        
-        <div>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-             <div className="container-fluid">
-                 <a className="navbar-brand" href="#">Navbar</a>
-                <div className="collapse navbar-collapse" id="navbarColor02">
-                  <ul className="navbar-nav me-auto">
-                     <li className="nav-item">
-                         <a className="nav-link active" href="#">Home</a>
-                     </li>
-                     <li className="nav-item">
-                         <a className="nav-link" href="#">Features</a>
-                     </li>
-                    </ul>
-                    <CarWidgets contBuscar={"Busca tus productos"}/>
-                 </div>
-             </div> 
-         </nav>
-
-     </div>
-         
-        /*  */
+        <Navbar bg="dark" variant="dark">
+          <Container>
+            <Link to="/productos"><p>Ver todo</p></Link>
+            <Link to="/categoria/Malbec"><p>Malbec</p></Link>
+            <Link to="/categoria/Cabernet"><p>Cabernet</p></Link>
+              <CarWidgets/>
+          </Container>
+        </Navbar>
     );
-}
-
-export default Navbar;
+  }
+  
+  export default NavBar;
